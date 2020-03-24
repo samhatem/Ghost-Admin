@@ -1,6 +1,6 @@
 export default [
     {
-        name: 'casper',
+        name: 'London',
         package: {
             name: 'Blog',
             version: '1.0'

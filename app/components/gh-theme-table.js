@@ -32,18 +32,18 @@ export default Component.extend({
         });
 
         duplicateThemes.forEach((theme) => {
-            if (theme.name !== 'casper') {
+            if (theme.name !== 'London') {
                 theme.label = `${theme.label} (${theme.name})`;
             }
         });
 
-        // "(default)" needs to be added to casper manually as it's always
+        // "(default)" needs to be added to london manually as it's always
         // displayed and would mess up the duplicate checking if added earlier
-        let casper = themes.findBy('name', 'casper');
-        if (casper) {
-            casper.label = `${casper.label} (default)`;
-            casper.isDefault = true;
-            casper.isDeletable = false;
+        let london = themes.findBy('name', 'London');
+        if (london) {
+            london.label = `${london.label} (default)`;
+            london.isDefault = true;
+            london.isDeletable = false;
         }
 
         // sorting manually because .sortBy('label') has a different sorting
